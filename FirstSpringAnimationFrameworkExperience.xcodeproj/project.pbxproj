@@ -13,9 +13,13 @@
 		E37D044C23A033CC00D95344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37D044A23A033CC00D95344 /* Main.storyboard */; };
 		E37D044E23A033CE00D95344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37D044D23A033CE00D95344 /* Assets.xcassets */; };
 		E37D045123A033CE00D95344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37D044F23A033CE00D95344 /* LaunchScreen.storyboard */; };
+		EE0483A6FDC1C966D73C2771 /* Pods_FirstSpringAnimationFrameworkExperience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3FF2F750DB413864013C33 /* Pods_FirstSpringAnimationFrameworkExperience.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FFFDF5DB2EF7C4536927140 /* Pods-FirstSpringAnimationFrameworkExperience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstSpringAnimationFrameworkExperience.debug.xcconfig"; path = "Target Support Files/Pods-FirstSpringAnimationFrameworkExperience/Pods-FirstSpringAnimationFrameworkExperience.debug.xcconfig"; sourceTree = "<group>"; };
+		A9F588EA07C10E18EAFB620B /* Pods-FirstSpringAnimationFrameworkExperience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstSpringAnimationFrameworkExperience.release.xcconfig"; path = "Target Support Files/Pods-FirstSpringAnimationFrameworkExperience/Pods-FirstSpringAnimationFrameworkExperience.release.xcconfig"; sourceTree = "<group>"; };
+		BC3FF2F750DB413864013C33 /* Pods_FirstSpringAnimationFrameworkExperience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSpringAnimationFrameworkExperience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37D044123A033CB00D95344 /* FirstSpringAnimationFrameworkExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstSpringAnimationFrameworkExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37D044423A033CB00D95344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37D044623A033CC00D95344 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0483A6FDC1C966D73C2771 /* Pods_FirstSpringAnimationFrameworkExperience.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8904448AB1794F7ACFC5404A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FF2F750DB413864013C33 /* Pods_FirstSpringAnimationFrameworkExperience.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E37D043823A033CB00D95344 = {
 			isa = PBXGroup;
 			children = (
 				E37D044323A033CB00D95344 /* FirstSpringAnimationFrameworkExperience */,
 				E37D044223A033CB00D95344 /* Products */,
+				F8D8E037D695383948396DB5 /* Pods */,
+				8904448AB1794F7ACFC5404A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = FirstSpringAnimationFrameworkExperience;
 			sourceTree = "<group>";
 		};
+		F8D8E037D695383948396DB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FFFDF5DB2EF7C4536927140 /* Pods-FirstSpringAnimationFrameworkExperience.debug.xcconfig */,
+				A9F588EA07C10E18EAFB620B /* Pods-FirstSpringAnimationFrameworkExperience.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E37D045523A033CE00D95344 /* Build configuration list for PBXNativeTarget "FirstSpringAnimationFrameworkExperience" */;
 			buildPhases = (
+				924269A2B5E5232AAAB6306B /* [CP] Check Pods Manifest.lock */,
 				E37D043D23A033CB00D95344 /* Sources */,
 				E37D043E23A033CB00D95344 /* Frameworks */,
 				E37D043F23A033CB00D95344 /* Resources */,
+				02A2AE679C006151055D78F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A2AE679C006151055D78F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstSpringAnimationFrameworkExperience/Pods-FirstSpringAnimationFrameworkExperience-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstSpringAnimationFrameworkExperience/Pods-FirstSpringAnimationFrameworkExperience-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstSpringAnimationFrameworkExperience/Pods-FirstSpringAnimationFrameworkExperience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		924269A2B5E5232AAAB6306B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirstSpringAnimationFrameworkExperience-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E37D043D23A033CB00D95344 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		E37D045623A033CE00D95344 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFFDF5DB2EF7C4536927140 /* Pods-FirstSpringAnimationFrameworkExperience.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		E37D045723A033CE00D95344 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F588EA07C10E18EAFB620B /* Pods-FirstSpringAnimationFrameworkExperience.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
